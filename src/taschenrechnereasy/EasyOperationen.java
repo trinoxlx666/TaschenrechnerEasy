@@ -14,7 +14,7 @@ public class EasyOperationen extends Eingabe implements IFaceEAOperationen  {
     private double wertAddi;            //Variablen Anlegen ohne Wert
     private double wertSubt;
     private double wertMulti;
-    private double wertDivi;
+    private double wertDivi;            //Division hinzugefügt
     
     
     
