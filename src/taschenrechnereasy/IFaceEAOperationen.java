@@ -15,12 +15,13 @@ public interface IFaceEAOperationen {
     public void SetSubtra(double a, double b);
     public void SetMulti(double a, double b);
     public void SetDivi(double a, double b);
+    public void SetPoti(int a, int b);
     
     public double getAddi();
     public double getSubtra();
     public double getMulti();
     public double getDivi();
-
+    public int getPoti();
 
     
 }

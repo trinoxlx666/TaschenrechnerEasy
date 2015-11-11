@@ -15,7 +15,7 @@ public class EasyOperationen extends Eingabe implements IFaceEAOperationen  {
     private double wertSubt;
     private double wertMulti;
     private double wertDivi;            //Division hinzugefügt
-    
+    private int wertPoti;
     
     
     //Addition 2er Variablen
@@ -52,6 +52,13 @@ public class EasyOperationen extends Eingabe implements IFaceEAOperationen  {
             
         }
         }
+    @Override
+    public void SetPoti(int a, int b){
+        this.wertPoti=(int) Math.pow(a,b);
+    }
+    
+    
+    
     //Wiedergabe Methoden(immer mit Rückgabewert)
     @Override
     public double getAddi() {
@@ -71,6 +78,11 @@ public class EasyOperationen extends Eingabe implements IFaceEAOperationen  {
     @Override
     public double getDivi() {
         return this.wertDivi;
+    }
+    
+    @Override
+    public int getPoti() {
+        return wertPoti;
     }
     
     
